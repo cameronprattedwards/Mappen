@@ -1,0 +1,2 @@
+C:\Users\GoFresh 2\documents\visual studio 2012\Projects\Mappen\MappenCloud\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\GoFresh 2\documents\visual studio 2012\Projects\Mappen\MappenCloud\bin\Debug\ServiceDefinition.csdef

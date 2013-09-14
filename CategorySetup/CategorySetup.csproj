@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{297A2E11-2E44-4E1D-AD21-6F647904A619}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CategorySetup</RootNamespace>
+    <AssemblyName>CategorySetup</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\..\..\..\..\..\softdevCam\Cibus\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\..\..\..\..\..\..\softdevCam\Cibus\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\IocBase\IocBox.csproj">
+      <Project>{977752bc-247c-484b-b221-843141abecd1}</Project>
+      <Name>IocBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\IocContainers\IocContainersInfrastructure.csproj">
+      <Project>{a5c71451-f0cd-484b-ac0e-e3adf4c6a48c}</Project>
+      <Name>IocContainersInfrastructure</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\BaseData\BaseData.csproj">
+      <Project>{3fbd97e5-a832-4b14-8e70-bb9fcfa70410}</Project>
+      <Name>BaseData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\Events\Events.csproj">
+      <Project>{67cf3cb7-aad3-4d3a-8af4-a8ba8ee62db5}</Project>
+      <Name>Events</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Data\IocContainersData\IocContainersData.csproj">
+      <Project>{8b4453eb-9ce5-44b3-ad11-88f7628631b5}</Project>
+      <Name>IocContainersData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\Entities\Entities.csproj">
+      <Project>{9f7baf08-6edb-489a-aed6-2ee9035ff90d}</Project>
+      <Name>Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IocContainersDomain\IocContainersDomain.csproj">
+      <Project>{b9725bd7-569b-4bd7-8782-5ae2177186f9}</Project>
+      <Name>IocContainersDomain</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,4 @@
+C:\Users\GoFresh 2\documents\visual studio 2012\Projects\Mappen\Data\Locations\bin\Debug\Locations.dll
+C:\Users\GoFresh 2\documents\visual studio 2012\Projects\Mappen\Data\Locations\bin\Debug\Locations.pdb
+C:\Users\GoFresh 2\documents\visual studio 2012\Projects\Mappen\Data\Locations\obj\Debug\Locations.dll
+C:\Users\GoFresh 2\documents\visual studio 2012\Projects\Mappen\Data\Locations\obj\Debug\Locations.pdb

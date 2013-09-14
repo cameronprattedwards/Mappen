@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Mappen</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="/Scripts/App/Prototype.js" type="text/javascript"></script>
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/jquery")
+        <script src="~/Scripts/Libraries/jquery-1.8.2.min.js"></script>   
+        <script src="~/Scripts/Libraries/jquery-ui-1.8.24.min.js"></script>   
+        <script src="/Scripts/Libraries/knockout-2.2.0.js" type="text/javascript"></script>
+        <script src="/Scripts/App/CustomKnockout.js" type="text/javascript"></script>
+        @RenderSection("scripts", required: false)
+    </head>
+    <body>
+        <header>
+        </header>
+        <section>
+            @RenderBody()
+        </section>
+        <footer>
+        </footer>
+
+    </body>
+</html>

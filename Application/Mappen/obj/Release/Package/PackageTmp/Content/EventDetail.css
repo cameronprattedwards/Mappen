@@ -1,0 +1,11 @@
+﻿.EventDetailDescription {
+    text-align: left;
+}
+
+.EventDetailVenue {
+    display: inline-block;
+    text-align: left;
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+}

@@ -1,0 +1,127 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+@section Scripts {
+    <link rel="stylesheet" type="text/css" href="/Content/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/FrontPage.css"/>
+    <link rel="stylesheet" type="text/css" href="/Content/EventDetail.css"/>
+    <script type="text/javascript" src="/Scripts/App/API.js"></script>
+    <script type="text/javascript" src="/Scripts/App/Jumper.js"></script>
+    <script type="text/javascript" src="/Scripts/App/MarkerRepository.js"></script>
+    <script type="text/javascript" src="/Scripts/App/GeocodeRepository.js"></script>
+    <script type="text/javascript" src="/Scripts/App/EventRepository.js"></script>
+    <script type="text/javascript" src="/Scripts/App/TileRepository.js"></script>
+    <script type="text/javascript" src="/Scripts/App/App.js"></script>
+    <script type="text/javascript" src="/Scripts/App/Address.js"></script>
+    <script type="text/javascript" src="/Scripts/App/Venue.js"></script>
+    <script type="text/javascript" src="/Scripts/App/EventInfo.js"></script>
+    <script type="text/javascript" src="/Scripts/App/MEvent.js"></script>
+
+    <script type="text/javascript" src="/Scripts/App/Mapp.js"></script>
+    <script type="text/javascript" src="/Scripts/App/Corner.js"></script>
+    <script type="text/javascript" src="/Scripts/App/Map.js"></script>
+    <script type="text/javascript" src="/Scripts/App/Tile.js"></script>
+    <script type="text/javascript" src="/Scripts/App/Timespan.js"></script>
+    <script type="text/javascript">
+        var app = new App();
+    </script>
+    <script type="text/html" id="Timeline">
+        <div class="Date" data-bind="text: Timespan.Start().DateFormat.call(Timespan.Start())"></div>
+        <div class="Viewport" data-bind="with: (function () { return Timespan;}())">
+            <span data-bind="text: Start().MinuteFormat.call(Start()) + ' - ' + End().MinuteFormat.call(End())"></span>
+        </div>
+        <div class="Timeline">
+            <div class="Helper"></div>
+            <ul class="Slider" data-bind="foreach: Hours">
+                <li data-bind="text: $data.HourFormat.call($data)" class="Hour"></li>
+            </ul>
+        </div>
+    </script>
+    <script type="text/html" id="MarkerSummary">
+        <div class="MarkerSummary">
+            <h2 data-bind="text: Info.Name, click: window.app.SetFeatured.bind(window.app, $data)" class="SummaryHeader"></h2>
+            <p data-bind="text: Timespan.MarkerFormat()" class="MarkerTime"></p>
+            <div data-bind="html: Info.Description() ? Info.Description().truncate(100) : ''" class="MarkerDescription"></div>
+        </div>
+    </script>
+}
+<div class="EventDetail" data-bind="with: FeaturedEvent()">
+    <div class="Overlay" data-bind="click: $parent.Unfeature.bind($parent)"></div>
+    <div class="OverlayWrapper" data-bind="click: $parent.Unfeature.bind($parent)">
+        <div class="OverlayInner" data-bind="click: function () { return true; }, clickBubble: false">
+            <img data-bind="attr: {src: Info.PhotoUrl()}, visible: Info.PhotoUrl()" class="EventDetailImg"/>
+            <h2 data-bind="text: Info.Name()"></h2>
+            <!-- ko foreach: Info.DisplayDescription -->
+            <p data-bind="text: $data" class="EventDetailDescription"></p>
+            <!-- /ko -->
+            <p>
+                <a data-bind="attr: {href: Info.Website()}, visible: Info.Website()" target="_blank">Website</a>
+            </p>
+            <h3>Venue Info:</h3>
+            <ul data-bind="with: Venue.Address" class="EventDetailVenue">
+                <li data-bind="text: $parent.Venue.Name, visible: $parent.Venue.Name()"></li>
+                <li data-bind="text: Street1"></li>
+                <li data-bind="text: Street2, visible: Street2()"></li>
+                <li data-bind="text: Street3, visible: Street3()"></li>
+                <li data-bind="text: City() + ', ' + State() + ' ' + Zip()"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="Mapp Section" data-bind="mapVisible: { check: MappMode() && !FeaturedEvent(), map: Mapp.Map.Map, center: Mapp.Map.Center() }">
+    <div class="Overlay SomethingElse" data-bind="click: StopMapp.bind($data)"></div>
+    <div class="OverlayWrapper" data-bind="click: StopMapp.bind($data)">
+        <div class="OverlayInner" data-bind="click: function () { return true; }, clickBubble: false">
+            <div class="MappenWrapper">
+                <img src="/Images/ajax-loader-small.gif" data-bind="visible: Mapp.Loading()"/>
+                <div class="TimelineWrapper" data-bind="timeline: (function () { console.log('Timelining', $data); return Mapp.Timespan; }())"></div>
+                <div class="MapWrapper" data-bind="map: Mapp.Map"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="FrontPage Section">
+    <div class="TopBar">
+        <span class="Logo">Mappen</span>
+        <button data-bind="click: DoMapp.bind($data), visible: !MappMode()" class="LaunchButton BlackButton">Launch the Mapp</button>
+        <button class="LaunchButton BlackButton" data-bind="visible: MappMode() && !JumpMode(), click: DoJump.bind($data)">Jump</button>
+        <span class="JumpModule" data-bind="visible: JumpMode(), with: new Jumper()">
+            <span style="display: inline-block;">
+                <span>Address</span>
+                <br />
+                <input type="text" id="JumpAddress" data-bind="value: Address, event: { change: Jump.bind($data, $root.Mapp) }"/>
+            </span>
+            <span style="display: inline-block;">
+                <span>Date</span>
+                <br />
+                <input type="text" data-bind="datepicker: Date" />
+            </span>
+            <button class="BlackButton" data-bind="click: $parent.StopJump.bind($parent)">Done</button>
+        </span>
+    </div>
+    <form data-bind="submit: Search">
+        <p><input type="text" data-bind="value: SearchTerm"/><button type="submit">Search</button></p>
+    </form>
+    <div class="EventList">
+        <img src="/Images/ajax-loader.gif" data-bind="visible: Busy"/>
+        <!-- ko foreach: VisibleEvents -->
+        <div data-bind="slideVisible: true, fadeVisible: true" class="FrontPageEvent">
+            <h2 data-bind="text: Info.Name, click: $root.SetFeatured.bind($root, $data)" class="Link"></h2>
+            <ul>
+                <li data-bind="text: Timespan.Start().MinuteFormat() + (Timespan.Start().IsToday() ? ' Today' : ' on ' + Timespan.Start().DateFormat())"></li>
+                <li data-bind="visible: Venue.Name(), text: Venue.Name() "></li>
+                <li data-bind="visible: Venue.Address.Street1(), text: Venue.Address.Street1()"></li>
+                <li data-bind="text: Venue.Address.City() + ', ' + Venue.Address.State()"></li>
+            </ul>
+            <p data-bind="html: Info.Description() ? Info.Description().truncate(300) : ''"></p>
+        </div>
+        <!-- /ko -->
+        <p data-bind="visible: Events().length > NumEvents()">
+            <span class="Link" data-bind="click: ShowMoreEvents.bind($data)">More</span>
+        </p>
+    </div>
+</div>
+
+

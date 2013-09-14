@@ -1,0 +1,173 @@
+﻿.Mapp.Visible {
+    opacity: 1;
+}
+
+.TimelineWrapper {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.Hour {
+    width: 60px;
+    font-size: 10px;
+    font-family: sans-serif;
+    list-style-type: none;
+    display: inline-block;
+    word-spacing: 0px;
+}
+
+.Timeline {
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    width: 100%;
+    height: 14px;
+
+    border: 1px black solid;
+    overflow:hidden;
+    text-align: left;
+    z-index:0;
+}
+
+.Slider, .Helper {
+    position: absolute;
+    left:0px;
+    top: 0px;
+    white-space: nowrap;
+    height: 100%;
+    margin: 0px;
+}
+
+.Slider {
+    z-index: 0;
+    padding:0px;
+    font-size: 0px;
+}
+
+.Helper {
+    z-index: 1;
+    width: 100%;
+}
+
+.Viewport {
+    height: 100px;
+    width: 120px;
+    border: 1px black solid;
+    margin: auto;
+    display: inline-block;
+    position:relative;
+    z-index: 1;
+    background-color: white;
+    opacity: .9;
+}
+
+.Viewport span {
+    font-size: 10px;
+    position: absolute;
+    left: 0px;
+    top: -15px;
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+}
+.TimelineWrapper .Date {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #eeeeff;
+    height: 100%;
+    width: 100%;
+}
+
+.MapWrapper {
+    width: 100%;
+    height: 500px;
+    display: inline-block;
+    margin: auto;
+}
+
+.Mapp {
+    opacity: 1;
+}
+
+.MappenWrapper {
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.MappenWrapper > img {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.MarkerSummary {
+    max-width:200px;
+    overflow: hidden;
+}
+
+.SummaryHeader {
+    font-size: 13px;
+    color: blue;
+    cursor: pointer;
+    margin: 0px;
+}
+
+.SummaryHeader:hover {
+    text-decoration: underline;
+}
+
+.MarkerTime {
+    margin: 0px;
+    font-weight: bold;
+}
+
+.MarkerDescription {
+    margin: 0px;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 2;
+    opacity: .5;
+}
+
+.OverlayWrapper {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    z-index: 3;
+    text-align: center;
+}
+
+.OverlayInner {
+    margin: auto;
+    display: inline-block;
+    background-color: white;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    height: 100%;
+    padding: 10px;
+    width: 800px;
+}
+
+.EventDetailImg {
+    max-width: 200px;
+    max-height:500px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+}

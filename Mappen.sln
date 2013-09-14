@@ -1,0 +1,265 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{0D1969CC-F1B4-4FB6-AD27-8A42284A3545}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{A376D470-3CF7-40A0-9386-73B8B760A8C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{EAA0DBB7-BFAF-413E-BB69-43B2949F4EBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mappen", "Application\Mappen\Mappen.csproj", "{C81C036B-7DE4-4273-919B-2181C1F106F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{171993AA-B27F-4672-881C-C3CEC9BE64CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rest", "..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\Rest\Rest.csproj", "{068A6C1B-CE06-446D-8FA5-3E9C0809D253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Security", "..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\Security\Security.csproj", "{EE143D29-67E5-45FD-AF49-A2D6469AC376}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{79ECFE9A-4754-48A5-A9EB-9DAC332CE12C}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utils", "..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\Utils\Utils.csproj", "{2B58AE9B-C0A1-4946-9781-FBE0ED2A92EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\Interfaces\Interfaces.csproj", "{4D4B768E-6571-41BB-8EE4-784760D68F94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocBox", "..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\IocBase\IocBox.csproj", "{977752BC-247C-484B-B221-843141ABECD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocContainersInfrastructure", "..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\IocContainers\IocContainersInfrastructure.csproj", "{A5C71451-F0CD-484B-AC0E-E3ADF4C6A48C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\Logging\Logging.csproj", "{EDB92991-1357-4A48-9E13-3A741BDEA095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TimeUtils", "..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\TimeUtils\TimeUtils.csproj", "{FFC8B0AC-C7E1-4C5D-BAF8-070F97BCCFBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO", "..\..\..\..\..\..\softdevCam\Cibus\Infrastructure\IO\IO.csproj", "{51187D6C-19D1-4B9E-923D-4310DFBE8B13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseData", "Data\BaseData\BaseData.csproj", "{3FBD97E5-A832-4B14-8E70-BB9FCFA70410}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocContainersData", "Data\IocContainersData\IocContainersData.csproj", "{8B4453EB-9CE5-44B3-AD11-88F7628631B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Domain\Entities\Entities.csproj", "{9F7BAF08-6EDB-489A-AED6-2EE9035FF90D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meetup", "Domain\Meetup\Meetup.csproj", "{73EE50FF-1BA1-4D68-BDEB-AEEB1556E71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiles", "Domain\Tiles\Tiles.csproj", "{A8CE03B6-0603-4529-B1AB-A29A4CE117F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users", "Domain\Users\Users.csproj", "{4EC06882-68C5-4712-8CFA-8CA7DD43B0CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityTester", "Application\EntityTester\EntityTester.csproj", "{9122F3E0-0FDD-40EA-8B88-F6B05FCEBF2D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeetupLoader", "Application\MeetupLoader\MeetupLoader.csproj", "{3D542AF2-ABAE-47BB-AA01-91B4512A18A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Events", "Data\Events\Events.csproj", "{67CF3CB7-AAD3-4D3A-8AF4-A8BA8EE62DB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsDomain", "Domain\EventsDomain\EventsDomain.csproj", "{B2324160-D6DB-439A-8EE1-D57851D6D553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Search", "Search\Search.csproj", "{58C1A233-423D-4E29-80A3-952E44077779}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocContainersDomain", "IocContainersDomain\IocContainersDomain.csproj", "{B9725BD7-569B-4BD7-8782-5AE2177186F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CategorySetup", "CategorySetup\CategorySetup.csproj", "{297A2E11-2E44-4E1D-AD21-6F647904A619}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "MappenCloud", "MappenCloud\MappenCloud.ccproj", "{DB067206-CA88-49C2-90AF-0AE6465BBAE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole1", "WorkerRole1\WorkerRole1.csproj", "{84CF9F93-A81A-47B1-9BD4-7DE571FCA1EB}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://zumelo.visualstudio.com/defaultcollection
+		SccProjectUniqueName0 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\Rest\\Rest.csproj
+		SccProjectTopLevelParentUniqueName0 = Mappen.sln
+		SccProjectName0 = $/Zumelo/Cibus/Infrastructure/Rest
+		SccAuxPath0 = https://zumelo.visualstudio.com/defaultcollection
+		SccLocalPath0 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\Rest
+		SccProvider0 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName1 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\Security\\Security.csproj
+		SccProjectTopLevelParentUniqueName1 = Mappen.sln
+		SccProjectName1 = $/Zumelo/Cibus/Infrastructure/Security
+		SccAuxPath1 = https://zumelo.visualstudio.com/defaultcollection
+		SccLocalPath1 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\Security
+		SccProvider1 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName2 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\Utils\\Utils.csproj
+		SccProjectTopLevelParentUniqueName2 = Mappen.sln
+		SccProjectName2 = $/Zumelo/Cibus/Infrastructure/Utils
+		SccAuxPath2 = https://zumelo.visualstudio.com/defaultcollection
+		SccLocalPath2 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\Utils
+		SccProvider2 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName3 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\Interfaces\\Interfaces.csproj
+		SccProjectTopLevelParentUniqueName3 = Mappen.sln
+		SccProjectName3 = $/Zumelo/Cibus/Infrastructure/Interfaces
+		SccAuxPath3 = https://zumelo.visualstudio.com/defaultcollection
+		SccLocalPath3 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\Interfaces
+		SccProvider3 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName4 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\IocBase\\IocBox.csproj
+		SccProjectTopLevelParentUniqueName4 = Mappen.sln
+		SccProjectName4 = $/Zumelo/Cibus/Infrastructure/IocBase
+		SccAuxPath4 = https://zumelo.visualstudio.com/defaultcollection
+		SccLocalPath4 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\IocBase
+		SccProvider4 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName5 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\IocContainers\\IocContainersInfrastructure.csproj
+		SccProjectTopLevelParentUniqueName5 = Mappen.sln
+		SccProjectName5 = $/Zumelo/Cibus/Infrastructure/IocContainers
+		SccAuxPath5 = https://zumelo.visualstudio.com/defaultcollection
+		SccLocalPath5 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\IocContainers
+		SccProvider5 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName6 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\Logging\\Logging.csproj
+		SccProjectTopLevelParentUniqueName6 = Mappen.sln
+		SccProjectName6 = $/Zumelo/Cibus/Infrastructure/Logging
+		SccAuxPath6 = https://zumelo.visualstudio.com/defaultcollection
+		SccLocalPath6 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\Logging
+		SccProvider6 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName7 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\TimeUtils\\TimeUtils.csproj
+		SccProjectTopLevelParentUniqueName7 = Mappen.sln
+		SccProjectName7 = $/Zumelo/Cibus/Infrastructure/TimeUtils
+		SccAuxPath7 = https://zumelo.visualstudio.com/defaultcollection
+		SccLocalPath7 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\TimeUtils
+		SccProvider7 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccProjectUniqueName8 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\IO\\IO.csproj
+		SccProjectTopLevelParentUniqueName8 = Mappen.sln
+		SccProjectName8 = $/Zumelo/Cibus/Infrastructure/IO
+		SccAuxPath8 = https://zumelo.visualstudio.com/defaultcollection
+		SccLocalPath8 = ..\\..\\..\\..\\..\\..\\softdevCam\\Cibus\\Infrastructure\\IO
+		SccProvider8 = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C81C036B-7DE4-4273-919B-2181C1F106F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C81C036B-7DE4-4273-919B-2181C1F106F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C81C036B-7DE4-4273-919B-2181C1F106F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C81C036B-7DE4-4273-919B-2181C1F106F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068A6C1B-CE06-446D-8FA5-3E9C0809D253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068A6C1B-CE06-446D-8FA5-3E9C0809D253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068A6C1B-CE06-446D-8FA5-3E9C0809D253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068A6C1B-CE06-446D-8FA5-3E9C0809D253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE143D29-67E5-45FD-AF49-A2D6469AC376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE143D29-67E5-45FD-AF49-A2D6469AC376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE143D29-67E5-45FD-AF49-A2D6469AC376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE143D29-67E5-45FD-AF49-A2D6469AC376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B58AE9B-C0A1-4946-9781-FBE0ED2A92EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B58AE9B-C0A1-4946-9781-FBE0ED2A92EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B58AE9B-C0A1-4946-9781-FBE0ED2A92EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B58AE9B-C0A1-4946-9781-FBE0ED2A92EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D4B768E-6571-41BB-8EE4-784760D68F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4B768E-6571-41BB-8EE4-784760D68F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4B768E-6571-41BB-8EE4-784760D68F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4B768E-6571-41BB-8EE4-784760D68F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{977752BC-247C-484B-B221-843141ABECD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{977752BC-247C-484B-B221-843141ABECD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{977752BC-247C-484B-B221-843141ABECD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{977752BC-247C-484B-B221-843141ABECD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5C71451-F0CD-484B-AC0E-E3ADF4C6A48C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5C71451-F0CD-484B-AC0E-E3ADF4C6A48C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5C71451-F0CD-484B-AC0E-E3ADF4C6A48C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5C71451-F0CD-484B-AC0E-E3ADF4C6A48C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB92991-1357-4A48-9E13-3A741BDEA095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB92991-1357-4A48-9E13-3A741BDEA095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB92991-1357-4A48-9E13-3A741BDEA095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB92991-1357-4A48-9E13-3A741BDEA095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFC8B0AC-C7E1-4C5D-BAF8-070F97BCCFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFC8B0AC-C7E1-4C5D-BAF8-070F97BCCFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFC8B0AC-C7E1-4C5D-BAF8-070F97BCCFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFC8B0AC-C7E1-4C5D-BAF8-070F97BCCFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51187D6C-19D1-4B9E-923D-4310DFBE8B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51187D6C-19D1-4B9E-923D-4310DFBE8B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51187D6C-19D1-4B9E-923D-4310DFBE8B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51187D6C-19D1-4B9E-923D-4310DFBE8B13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FBD97E5-A832-4B14-8E70-BB9FCFA70410}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FBD97E5-A832-4B14-8E70-BB9FCFA70410}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FBD97E5-A832-4B14-8E70-BB9FCFA70410}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FBD97E5-A832-4B14-8E70-BB9FCFA70410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B4453EB-9CE5-44B3-AD11-88F7628631B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B4453EB-9CE5-44B3-AD11-88F7628631B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B4453EB-9CE5-44B3-AD11-88F7628631B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B4453EB-9CE5-44B3-AD11-88F7628631B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F7BAF08-6EDB-489A-AED6-2EE9035FF90D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F7BAF08-6EDB-489A-AED6-2EE9035FF90D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F7BAF08-6EDB-489A-AED6-2EE9035FF90D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F7BAF08-6EDB-489A-AED6-2EE9035FF90D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73EE50FF-1BA1-4D68-BDEB-AEEB1556E71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73EE50FF-1BA1-4D68-BDEB-AEEB1556E71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73EE50FF-1BA1-4D68-BDEB-AEEB1556E71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73EE50FF-1BA1-4D68-BDEB-AEEB1556E71C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8CE03B6-0603-4529-B1AB-A29A4CE117F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8CE03B6-0603-4529-B1AB-A29A4CE117F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8CE03B6-0603-4529-B1AB-A29A4CE117F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8CE03B6-0603-4529-B1AB-A29A4CE117F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EC06882-68C5-4712-8CFA-8CA7DD43B0CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EC06882-68C5-4712-8CFA-8CA7DD43B0CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EC06882-68C5-4712-8CFA-8CA7DD43B0CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EC06882-68C5-4712-8CFA-8CA7DD43B0CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9122F3E0-0FDD-40EA-8B88-F6B05FCEBF2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9122F3E0-0FDD-40EA-8B88-F6B05FCEBF2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9122F3E0-0FDD-40EA-8B88-F6B05FCEBF2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9122F3E0-0FDD-40EA-8B88-F6B05FCEBF2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D542AF2-ABAE-47BB-AA01-91B4512A18A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D542AF2-ABAE-47BB-AA01-91B4512A18A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D542AF2-ABAE-47BB-AA01-91B4512A18A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D542AF2-ABAE-47BB-AA01-91B4512A18A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67CF3CB7-AAD3-4D3A-8AF4-A8BA8EE62DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67CF3CB7-AAD3-4D3A-8AF4-A8BA8EE62DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67CF3CB7-AAD3-4D3A-8AF4-A8BA8EE62DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67CF3CB7-AAD3-4D3A-8AF4-A8BA8EE62DB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2324160-D6DB-439A-8EE1-D57851D6D553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2324160-D6DB-439A-8EE1-D57851D6D553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2324160-D6DB-439A-8EE1-D57851D6D553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2324160-D6DB-439A-8EE1-D57851D6D553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58C1A233-423D-4E29-80A3-952E44077779}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58C1A233-423D-4E29-80A3-952E44077779}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58C1A233-423D-4E29-80A3-952E44077779}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58C1A233-423D-4E29-80A3-952E44077779}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9725BD7-569B-4BD7-8782-5AE2177186F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9725BD7-569B-4BD7-8782-5AE2177186F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9725BD7-569B-4BD7-8782-5AE2177186F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9725BD7-569B-4BD7-8782-5AE2177186F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{297A2E11-2E44-4E1D-AD21-6F647904A619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297A2E11-2E44-4E1D-AD21-6F647904A619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297A2E11-2E44-4E1D-AD21-6F647904A619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297A2E11-2E44-4E1D-AD21-6F647904A619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB067206-CA88-49C2-90AF-0AE6465BBAE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB067206-CA88-49C2-90AF-0AE6465BBAE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB067206-CA88-49C2-90AF-0AE6465BBAE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB067206-CA88-49C2-90AF-0AE6465BBAE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84CF9F93-A81A-47B1-9BD4-7DE571FCA1EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84CF9F93-A81A-47B1-9BD4-7DE571FCA1EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84CF9F93-A81A-47B1-9BD4-7DE571FCA1EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84CF9F93-A81A-47B1-9BD4-7DE571FCA1EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9F7BAF08-6EDB-489A-AED6-2EE9035FF90D} = {0D1969CC-F1B4-4FB6-AD27-8A42284A3545}
+		{73EE50FF-1BA1-4D68-BDEB-AEEB1556E71C} = {0D1969CC-F1B4-4FB6-AD27-8A42284A3545}
+		{A8CE03B6-0603-4529-B1AB-A29A4CE117F6} = {0D1969CC-F1B4-4FB6-AD27-8A42284A3545}
+		{4EC06882-68C5-4712-8CFA-8CA7DD43B0CB} = {0D1969CC-F1B4-4FB6-AD27-8A42284A3545}
+		{B2324160-D6DB-439A-8EE1-D57851D6D553} = {0D1969CC-F1B4-4FB6-AD27-8A42284A3545}
+		{58C1A233-423D-4E29-80A3-952E44077779} = {0D1969CC-F1B4-4FB6-AD27-8A42284A3545}
+		{B9725BD7-569B-4BD7-8782-5AE2177186F9} = {0D1969CC-F1B4-4FB6-AD27-8A42284A3545}
+		{3FBD97E5-A832-4B14-8E70-BB9FCFA70410} = {A376D470-3CF7-40A0-9386-73B8B760A8C0}
+		{8B4453EB-9CE5-44B3-AD11-88F7628631B5} = {A376D470-3CF7-40A0-9386-73B8B760A8C0}
+		{67CF3CB7-AAD3-4D3A-8AF4-A8BA8EE62DB5} = {A376D470-3CF7-40A0-9386-73B8B760A8C0}
+		{C81C036B-7DE4-4273-919B-2181C1F106F0} = {EAA0DBB7-BFAF-413E-BB69-43B2949F4EBE}
+		{9122F3E0-0FDD-40EA-8B88-F6B05FCEBF2D} = {EAA0DBB7-BFAF-413E-BB69-43B2949F4EBE}
+		{3D542AF2-ABAE-47BB-AA01-91B4512A18A5} = {EAA0DBB7-BFAF-413E-BB69-43B2949F4EBE}
+		{297A2E11-2E44-4E1D-AD21-6F647904A619} = {EAA0DBB7-BFAF-413E-BB69-43B2949F4EBE}
+		{DB067206-CA88-49C2-90AF-0AE6465BBAE0} = {EAA0DBB7-BFAF-413E-BB69-43B2949F4EBE}
+		{84CF9F93-A81A-47B1-9BD4-7DE571FCA1EB} = {EAA0DBB7-BFAF-413E-BB69-43B2949F4EBE}
+		{068A6C1B-CE06-446D-8FA5-3E9C0809D253} = {171993AA-B27F-4672-881C-C3CEC9BE64CA}
+		{EE143D29-67E5-45FD-AF49-A2D6469AC376} = {171993AA-B27F-4672-881C-C3CEC9BE64CA}
+		{2B58AE9B-C0A1-4946-9781-FBE0ED2A92EF} = {171993AA-B27F-4672-881C-C3CEC9BE64CA}
+		{4D4B768E-6571-41BB-8EE4-784760D68F94} = {171993AA-B27F-4672-881C-C3CEC9BE64CA}
+		{977752BC-247C-484B-B221-843141ABECD1} = {171993AA-B27F-4672-881C-C3CEC9BE64CA}
+		{A5C71451-F0CD-484B-AC0E-E3ADF4C6A48C} = {171993AA-B27F-4672-881C-C3CEC9BE64CA}
+		{EDB92991-1357-4A48-9E13-3A741BDEA095} = {171993AA-B27F-4672-881C-C3CEC9BE64CA}
+		{FFC8B0AC-C7E1-4C5D-BAF8-070F97BCCFBC} = {171993AA-B27F-4672-881C-C3CEC9BE64CA}
+		{51187D6C-19D1-4B9E-923D-4310DFBE8B13} = {171993AA-B27F-4672-881C-C3CEC9BE64CA}
+	EndGlobalSection
+EndGlobal
